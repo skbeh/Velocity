@@ -630,6 +630,7 @@ public class VelocityConfiguration implements ProxyConfig {
           }
         }
         this.servers = ImmutableMap.copyOf(servers);
+        this.serverForwardingModes = ImmutableMap.copyOf(serverForwardingModes);
         this.attemptConnectionOrder = config.getOrElse("try", attemptConnectionOrder);
       }
     }
